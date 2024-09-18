@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Story of Musa (As)</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* General Reset */
         body, html {
@@ -16,7 +17,7 @@
 
         /* Background Image */
         body {
-            background: url('images/original.jpg') no-repeat center center fixed;
+            background: url('images/02.jpg') no-repeat center center fixed;
             background-size: cover;
             color: white;
             text-align: center;
@@ -72,68 +73,230 @@
 </head>
 <body>
 
+
     <div class="content">
-       <div class="border">
-        <h1 class="heading">The Story of Musa (عليه السلام)</h1>
-        <div class="middle">
-         <div class="flex">
-             <h1 class="h1">01.Part One:</h1>
-         <!-- Background Audio -->
-         <a class="a" href="lectures/musa01.mp3" download class="download-link">Download audio </a>
-         </div>
- 
-         <div class="flex">
-             <h1 class="h1">02.Part Two:</h1>
-         <!-- Background Audio -->
-         <a class="a" href="lectures/musa02.mp3" download class="download-link">Download audio</a>
-         </div>
-
-         <div class="flex">
-             <h1 class="h1">03.Part Three:</h1>
-         <!-- Background Audio -->
-         <a class="a" href="lectures/musa03.mp3" download class="download-link">Download audio</a>
-         </div>
-
-         <div class="flex">
-             <h1 class="h1">04.Part Four:</h1>
-         <!-- Background Audio -->
-         <a class="a" href="lectures/musa04.mp3" download class="download-link">Download audio</a>
-         </div>
-
-         <div class="flex">
-            <h1 class="h1">05.Part Five:</h1>
-        <!-- Background Audio -->
-        <a class="a" href="lectures/musa05.mp3" download class="download-link">Download audio</a>
-        </div>
-
-         <div class="flex">
-            <h1 class="h1">06.Part Six:</h1>
-        <!-- Background Audio -->
-        <a class="a" href="lectures/musa06.mp3" download class="download-link">Download audio</a>
-        </div>
-
-         <div class="flex">
-            <h1 class="h1">07.Part Seven:</h1>
-        <!-- Background Audio -->
-        <a class="a" href="lectures/musa07.mp3" download class="download-link">Download audio</a>
-        </div>
-
-         <div class="flex">
-            <h1 class="h1">08.Part Eight:</h1>
-        <!-- Background Audio -->
-        <a class="a" href="lectures/musa08.mp3" download class="download-link">Download audio</a>
-        </div>
 
         
 
-        </div>
- 
-         <p class="p"> Do you listen the 8th part?</p>
-         <div class="box">
-             <button class="ybutton" onclick="navigateToPage2()">YES</button>
-         <button class="nbutton" onclick="navigateToPage()">No</button>
+       <div class="border">
+        <h1 class="heading">Story of Musa (عليه السلام)</h1>
+        
+        <!-- Track one -->
+        <div class="middle">
+            <div id="myPopup" class="popup">
+                <div class="popup-content">
+
+                  <audio autoplay loop controls>
+                    <source src="lectures/musa01.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <span class="close-btn" onclick="hidePopup()">Back</span>
+                </div>
+
+              </div>
+         <div class="flex">
+             <h1 class="h1">01.Track One:</h1>
+             <a class="a" href="lectures/musa01.mp3" download class="download-link">Download</a>
+             <button class="play" onclick="showPopup()"><i class="fa-solid fa-play"></i></button>
          </div>
-         <div class="p" id="error-message">Sorry!</div>
+        </div>
+        <!-- Track end -->
+
+         <!-- Track two -->
+         <div class="middle">
+            <div id="myPopup" class="popup">
+                <div class="popup-content">
+                    
+                  <audio autoplay loop controls>
+                    <source src="lectures/musa02.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <span class="close-btn" onclick="hidePopup()">Back</span>
+                </div>
+
+              </div>
+         <div class="flex">
+             <h1 class="h1">02.Track Two:</h1>
+             <a class="a" href="lectures/musa02.mp3" download class="download-link">Download</a>
+             <button class="play" onclick="showPopup()"><i class="fa-solid fa-play"></i></button>
+         </div>
+        </div>
+        <!-- Track end -->
+
+         <!-- Track Three -->
+         <div class="middle">
+            <div id="myPopup" class="popup">
+                <div class="popup-content">
+                    
+                  <audio autoplay loop controls>
+                    <source src="lectures/musa03.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <span class="close-btn" onclick="hidePopup()">Back</span>
+                </div>
+
+              </div>
+         <div class="flex">
+             <h1 class="h1">03.Track Three:</h1>
+             <a class="a" href="lectures/musa03.mp3" download class="download-link">Download</a>
+             <button class="play" onclick="showPopup()"><i class="fa-solid fa-play"></i></button>
+         </div>
+        </div>
+        <!-- Track end -->
+
+         <!-- Track Four -->
+         <div class="middle">
+            <div id="myPopup" class="popup">
+                <div class="popup-content">
+                    
+                  <audio autoplay loop controls>
+                    <source src="lectures/musa04.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <span class="close-btn" onclick="hidePopup()">Back</span>
+                </div>
+
+              </div>
+         <div class="flex">
+             <h1 class="h1">04.Track Four:</h1>
+             <a class="a" href="lectures/musa04.mp3" download class="download-link">Download</a>
+             <button class="play" onclick="showPopup()"><i class="fa-solid fa-play"></i></button>
+         </div>
+        </div>
+        <!-- Track end -->
+
+        <!-- Track Four -->
+        <div class="middle">
+            <div id="myPopup" class="popup">
+                <div class="popup-content">
+                    
+                  <audio autoplay loop controls>
+                    <source src="lectures/musa05.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <span class="close-btn" onclick="hidePopup()">Back</span>
+                </div>
+
+              </div>
+         <div class="flex">
+             <h1 class="h1">05.Track Five:</h1>
+             <a class="a" href="lectures/musa05.mp3" download class="download-link">Download</a>
+             <button class="play" onclick="showPopup()"><i class="fa-solid fa-play"></i></button>
+         </div>
+        </div>
+        <!-- Track end -->
+
+        <!-- Track Six -->
+        <div class="middle">
+            <div id="myPopup" class="popup">
+                <div class="popup-content">
+                    
+                  <audio autoplay loop controls>
+                    <source src="lectures/musa06.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <span class="close-btn" onclick="hidePopup()">Back</span>
+                </div>
+
+              </div>
+         <div class="flex">
+             <h1 class="h1">06.Track Six:</h1>
+             <a class="a" href="lectures/musa06.mp3" download class="download-link">Download</a>
+             <button class="play" onclick="showPopup()"><i class="fa-solid fa-play"></i></button>
+         </div>
+        </div>
+        <!-- Track end -->
+
+        <!-- Track Seven -->
+        <div class="middle">
+            <div id="myPopup" class="popup">
+                <div class="popup-content">
+                    
+                  <audio autoplay loop controls>
+                    <source src="lectures/musa07.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <span class="close-btn" onclick="hidePopup()">Back</span>
+                </div>
+
+              </div>
+         <div class="flex">
+             <h1 class="h1">07.Track Seven:</h1>
+             <a class="a" href="lectures/musa07.mp3" download class="download-link">Download</a>
+             <button class="play" onclick="showPopup()"><i class="fa-solid fa-play"></i></button>
+         </div>
+        </div>
+        <!-- Track end -->
+
+        <!-- Track Eight -->
+        <div class="middle">
+            <div id="myPopup" class="popup">
+                <div class="popup-content">
+                    
+                  <audio autoplay loop controls>
+                    <source src="lectures/musa08.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <span class="close-btn" onclick="hidePopup()">Back</span>
+                </div>
+
+              </div>
+         <div class="flex">
+             <h1 class="h1">08.Track Eight:</h1>
+             <a class="a" href="lectures/musa08.mp3" download class="download-link">Download</a>
+             <button class="play" onclick="showPopup()"><i class="fa-solid fa-play"></i></button>
+         </div>
+        </div>
+        <!-- Track end -->
+
+        <!-- Track Nine -->
+        <div class="middle">
+            <div id="myPopup" class="popup">
+                <div class="popup-content">
+                    
+                  <audio autoplay loop controls>
+                    <source src="lectures/musa09.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <span class="close-btn" onclick="hidePopup()">Back</span>
+                </div>
+
+              </div>
+         <div class="flex">
+             <h1 class="h1">09.Track Nine:</h1>
+             <a class="a" href="lectures/musa09.mp3" download class="download-link">Download</a>
+             <button class="play" onclick="showPopup()"><i class="fa-solid fa-play"></i></button>
+         </div>
+        </div>
+        <!-- Track end -->
+
+        <!-- Track Ten -->
+        <div class="middle">
+            <div id="myPopup" class="popup">
+                <div class="popup-content">
+                    
+                  <audio autoplay loop controls>
+                    <source src="lectures/musa10.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <span class="close-btn" onclick="hidePopup()">Back</span>
+                </div>
+
+              </div>
+         <div class="flex">
+             <h1 class="h1">10.Track Ten:</h1>
+             <a class="a" href="lectures/musa10.mp3" download class="download-link">Download</a>
+             <button class="play" onclick="showPopup()"><i class="fa-solid fa-play"></i></button>
+         </div>
+        </div>
+        <!-- Track end -->
+
+         
+
+
+
+
+        </div>
        </div>
     </div>
 
